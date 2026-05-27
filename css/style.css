@@ -245,7 +245,8 @@ a.ddmenu::before {
 /*ドロップダウンメニューブロック全体*/
 .large-screen #menubar ul ul {
 	position: absolute;z-index: 100;
-	width: 100%;
+	width: max-content;
+	min-width: 100%;
 }
 
 
@@ -1690,6 +1691,9 @@ ul.btn li:nth-child(2) a {
   background: #fffdf8;
   color: var(--fusion-navy);
   border-bottom: 1px solid var(--fusion-line);
+  white-space: nowrap;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
 }
 .large-screen #menubar li ul a:hover {
   background: var(--fusion-gold-soft);
@@ -1751,29 +1755,7 @@ main.c2 {
   background: rgba(255,255,255,.72);
   backdrop-filter: blur(2px);
 }
-.main > section,
-.sub .box1,
-.sub > h3 + nav,
-.sub p.img,
-.list,
-.focus-entry-card,
-.visual-tile,
-.notice-box,
-.audit-page-note,
-.source-status-box,
-.research-note-box,
-.audit-status-panel,
-.response-card,
-.classification-card,
-.status-card,
-.audit-card,
-.paper-cover,
-.paper-toc,
-.source-note-box,
-.callout {
-  border-color: var(--fusion-line) !important;
-  box-shadow: var(--fusion-shadow);
-}
+
 
 .main h2,
 .sub h3 {
@@ -1996,11 +1978,16 @@ header {
   position: absolute;
   top: 100%;
   z-index: 1001;
+  width: max-content;
+  min-width: 100%;
   box-shadow: 0 14px 30px rgba(6,23,41,.18);
 }
 .large-screen #menubar li ul a {
   background: #fffdf8 !important;
   color: #0b2a4a !important;
+  white-space: nowrap;
+  padding-left: 1.2em !important;
+  padding-right: 1.2em !important;
 }
 .large-screen #menubar li ul a:hover {
   background: #fff4c7 !important;
